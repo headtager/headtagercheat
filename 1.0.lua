@@ -53,7 +53,7 @@ end
     end
 end)
 
-Section:NewButton("Infinity jumps (it works until you die)", "ButtonInfo", function()
+Section:NewButton("Infinity jumps", "ButtonInfo", function()
     local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
@@ -73,7 +73,7 @@ end
 game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest) 
 end)
 
-Section:NewButton("Noclip (it works until you leave the place)", "ButtonInfo", function()
+Section:NewButton("Noclip", "ButtonInfo", function()
     local Noclip = nil
 local Clip = nil
 
@@ -100,7 +100,7 @@ end
 noclip() -- to toggle noclip() and clip()
 end)
 
-Section:NewButton("Wallhack (it works until you leave the place)", "ButtonInfo", function()
+Section:NewButton("Wallhack", "ButtonInfo", function()
     while wait(0.5) do
     for i, childrik in ipairs(workspace:GetDescendants()) do
         if childrik:FindFirstChild("Humanoid") then
